@@ -1,0 +1,296 @@
+
+<html>
+<title>Atooz</title>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>   
+    
+    <style>
+
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+   background: linear-gradient(to left, #00f260, #0575e6);
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.150em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: white;
+  font-size: 14px;
+   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: firebrick;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
+}
+
+    </style>
+</head>
+    
+<body> 
+    <div class="header">
+    <h3 class='hide-large' style="text-align: center; font-family:cursive;">Info Zools</h3>
+    <button class="hide-large" onclick="opened()">&#9776;</button>
+   </div>
+    
+    <div class = "nav collapse animate-left" id="mySidebar">
+          <button class="hide-large" onclick="closed()">X</button>
+        <a class="menus" data-target="Home">Home</a>
+        <a class="menus" data-target="Education">Education</a>
+        <a class="menus" data-target="Technology">Technology</a>
+        <a class="menus" data-target="Gov">Exams</a>
+        <a class="menus" data-target="About">About</a>
+        <a class="menus" data-target="Contact">Contact</a>
+    </div>
+
+<div class="ctx" style="display: block;" id="Home">
+    <h3>Explore Learning !!!</h3>
+    <p>The Website is developed to share the information and knowledge. The content of the website is updated periodically. The users can suggest any ideas or concept to improve the website </p>
+</div>
+    
+<div class="ctx home_c" id="Education">
+<div class="wrapper">
+    <section class="columns">
+       <div class="column">
+          <h3>Networking</h3>
+          <li><a href="Computer-Networking-Basic/Networking-Basic-Number%20System.html" target="_blank"> Networking Basic</a></li>
+        <li><a href="Computer-Networking-Routing/Access-Control-List.html" target="_blank">Routing</a></li>
+          <h3>Telecommunication</h3>
+        <li><a href="mobile-communication/wireless-communication.html" target="_blank">Wireless communication</a></li>
+      </div>
+      <div class="column">
+         <h3>Web Development</h3>
+        <li><a href="seo/search-engine-optimization.html">Search Engine Optimization</a></li>
+        <h3>Abbrevations</h3>
+         <li><a href="abbrevation/a.html">Computing and Information Technology</a></li>
+      </div>
+    
+       <div class="column">
+        <h3>Entrance exams for Colleges In India</h3>
+           <li><a href="engineering-exams/list-of-entrance-exams-for-engineering.html" target="_blank">Entrance Exam for Engineering Colleges</a></li>
+         <li>Entrance Exam for Medical Colleges</li>
+        </div>
+    </section>
+</div>
+
+</div>
+
+<div class="ctx home_c" id="Technology">
+<div class="wrapper">
+    <section class="columns">
+    <div class="column">
+        <h3>Loading....</h3>
+        <li><a href="mobile-communication/wireless-communication.html">...</a></li>
+    </div>
+     <div class="column">
+         <h3>Inventions and Discoveries</h3>
+        <li><a href="Technology/Inventions_and_discoveries-by-Indians.html"></a>Inventions</li>
+        <li><a href="invention-by-women/medical-inventions.html">Invention by womens</a></li>
+      </div>
+    </section>
+</div>
+</div>
+    
+<div class="ctx home_c" id="Gov">
+<div class="wrapper">
+    <section class="columns">
+    <div class="column">
+        <h3>Central Government Exams for Job oppurtunity </h3>
+        <li><a href="exams/bhel.html">BHEL</a></li>
+        <li>BSNL</li>
+        
+       
+        
+        <h3>Entrance Exam for Medical Colleges</h3>
+        <li>NEET Exam</li>
+        
+         <h3>Entrance Exam for Masters and Job Oppurtunity</h3>
+         <li><a href="gate-exam/gate-exam-overview.html">GATE Exam</a></li>
+
+    </div>
+     <div class="column">
+         <h3>State Government Exams </h3>
+     </div>
+       <div class="column">
+         <h3>Bank Exams </h3>
+        <li>***</li>
+        <li>****</li>
+     </div>
+    </section>
+</div>
+ </div>
+
+<div class="ctx home_content" id="About">
+<h3>Welecome to the World of Tecnology</h3>
+    <p><b>Karthikeyan : </b>An Engineer graduated in ETE (Electronic & Telecommunication Engineering) stream from Karpagam college of Engineering Passionate in web development and agriculture.</p>
+    <h2>Major Contributors / Advisors</h2>
+     <p><b>Krishna : </b>An Engineer graduated in Mechanical stream from Karpagam college of Engineering Passionate in  full stack developer</p>
+    <p><b>RenugaDevi : </b>An Engineer graduated in ECE (Electronic & Communication Engineering) stream from Karpagam college of Engineering Passionate in Content Writting</p>
+</div>
+    
+<div class="ctx home_content" id="Contact" >
+<h3>Contact us</h3>
+<p style="color: firebrick">Address</p>
+
+<p>35 Peranaicken Valasu,Vellavavipudur Post</p>
+<p>Mulanur</p>
+<p>Tiruppur(638661),Tamilnadu</p>
+<p>India,Asia</p><br>
+
+<p style="color: firebrick">&#128222 Contact Number</p>
+<p>+91 8508536858</p><br>
+
+<p style="color: firebrick">Feedback and Querries</p>
+<p>karthikeyan.r.30497@gmail.com</p>
+</div>
+</body> 
+
+<!-- FOOTER START -->
+<div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h1>Company</h1>
+    <ul>
+      <li>About</li>
+      <li>Mission</li>
+      <li>Services</li>
+      <li>Social</li>
+      <li>Get in touch</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Products</h1>
+    <ul>
+      <li>About</li>
+      <li>Mission</li>
+      <li>Services</li>
+      <li>Social</li>
+      <li>Get in touch</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Accounts</h1>
+    <ul>
+      <li>About</li>
+      <li>Mission</li>
+      <li>Services</li>
+      <li>Social</li>
+      <li>Get in touch</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Resources</h1>
+    <ul>
+      <li>Webmail</li>
+      <li>Redeem code</li>
+      <li>WHOIS lookup</li>
+      <li>Site map</li>
+      <li>Web templates</li>
+      <li>Email templates</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>Support</h1>
+    <ul>
+      <li>Contact us</li>
+      <li>Web chat</li>
+      <li>Open ticket</li>
+    </ul>
+  </div>
+  <div class="col social">
+    <h1>Social</h1>
+    <ul>
+      <li><img src="images/youtube.png" width="32" style="width: 32px;"></li>
+      <li><img src="images/linkedin.png" width="32" style="width: 32px;"></li>
+      <li><img src="images/facebook.png" width="32" style="width: 32px;"></li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div> 
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/index.css">
+<script src="js/script.js"></script>
+<style>
+table{
+width:10%;
+}
+table, td {
+border-collapse: collapse;
+}
+table td{
+border: 0.1px solid #013220;
+}
+th, td {
+padding: 0px 5px 0px 5px;
+text-align: center;
+}
+hr{
+color:#8AD7FD;
+}
+h4{
+font-weight:700;
+color:#8AD7FD;
+}
+</style>
+</head>
+<body>
+    <title>Number System</title>
+   <div class= "header-top">
+<ul>
+<li><a href="../index.html" target="_blank"><img src="home.png"></a></li>
+</ul>
+</div>
+<div class="header">
+  <button class="hide-large" onclick="opened()">&#9776;</button>
+       <h3>Fundamentals of Networking </h3>
+</div>
+
+    <div class="row">
+    <div class="col-3 menu animate-left" id="mySidebar">
+    <ul>
+    <li> <a href="Networking-Basic-Number%20System.html">Number System</a></li>
+    <li> <a href="Networking-Basic-NumberSystem-Conversions.html">Number System Conversion</a></li>
+    <li> <a href="Networking-Basic-Communication.html">Communication</a></li>
+    <li> <a href="Networking%20Basic-Requirements-for-Communication.html">Requirements for Communication</a></li>
+    <li> <a href="Networking-Basic-Cables.html">Cables</a></li>
+    <li> <a href="Networking-Basic-IP-Address.html">IP address</a></li>
+    <li> <a href="Networking-Basic-IPV6-Address.html">IPV6 address</a></li>
+    <li> <a href="Networking-Basic-MAC-Address.html">MAC address</a></li>
+    <li> <a href="Networking-Basic-Basic-Commands.html">Basic Commands</a></li>
+    <li> <a href="Networking-Basic-Networking.html">Networking</a></li>
+    <li> <a style="color:red" href="Networking-Basic-SubnetMask.html">Subnet Mask</a></li>
+    <li> <a href="Networking-Basic-Subnetting.html">Subnetting</a></li>
+    <li> <a href="Networking-Basic-Router.html">Router</a></li>
+    <li> <a href="Networking-Basic-Switch.html">Switch</a></li>
+    <li> <a href="Networking-Basic-Windows%20as%20Router.html">Windows as Router</a></li>
+    <li> <a href="Networking-Basic-CISCO-Router.html">Cisco Router</a></li>
+ </ul>
+</div>
+ 
+<div class="col-6 main">
+<h3>Subnet Masking</h3>
+<li>Network - 1</li>
+<li>Host - 0</li>
+
+<h3>What is SubnetMask ?</h3>
+<p>Subnet mask is the combination of network and host. It is used to determine the Network ID and Host bit in IP address</p>
+<p>A computer find the Network Id and Broadcast ID with help of the IP address and Subnetmask</p>
+<p> Default SubnetMask is also called as Classful</p>
+
+<h3>Network ID</h3>
+<p>Donot disturbed in Network Bits all Host Bits are 0</p>
+<h3>First ID</h3>
+<p>Donot disturbed in Network Bits all Host Bits are 0 except Last bit 1</p>
+<h3>Last ID</h3>
+<p>Donot disturbed in Network Bits all Host Bits are 1 except Last bit 0</p>
+<h3>Broadcast ID</h3>
+<p>Donot disturbed in Network Bits all Host Bits are 1 </p>
+<br>
+<h3> Example IP adress in Class A : 100.0.0.0</h3>
+<h4> Network ID:&nbsp;&nbsp;100.0.0.0</h4>
+<table>
+<tr><th>Network</th><th>Network</th><th>Network</th><th colspan="8">Host</th></tr>
+<tr><td style="border-style: none;">100.</td><td style="border-style: none;">0.</td><td style="border-style: none;">0.</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td>0    </td></tr>
+</table>
+
+<h4> First ID:&nbsp;&nbsp;100.0.0.1</h4>
+<table>
+<tr><th>Network</th><th>Network</th><th>Network</th><th colspan="8">Host</th></tr>
+<tr><td style="border-style: none;">100.</td><td style="border-style: none;">0.</td><td style="border-style: none;">0.</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td>1</td></tr>
+</table>
+
+<h4> Last ID: &nbsp;&nbsp;  100.255.255.254</h4>
+<table>
+<tr><th>Network</th><th>Network</th><th>Network</th><th colspan="8">Host</th></tr>
+<tr><td style="border-style: none;">100.</td><td style="border-style: none;">255.</td><td style="border-style: none;">255.</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td> <td>1</td> <td>1</td><td>0</td></tr>
+</table>
+
+<h4> Broadcast ID: &nbsp;&nbsp;  100.255.255.255</h4>
+<table>
+<tr><th>Network</th><th>Network</th><th>Network</th><th colspan="8">Host</th></tr>
+<tr><td style="border-style: none;">100.</td><td style="border-style: none;">255.</td><td style="border-style: none;">255.</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td> <td>1</td> <td>1</td><td>1</td></tr>
+</table>
+<br>
+<h3> Example IP adress in Class B : 180.0.0.0</h3>
+<h4> Network ID:&nbsp;&nbsp;180.0.0.0</h4>
+<table>
+<tr><th>Network</th><th>Network</th><th colspan="8">Host</th><th colspan="9">Host</th></tr>
+<tr><td style="border-style: none;">180.</td><td style="border-style: none;">0.</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td >0</td><td style="border-style:none;">.</td ><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td>0</td></tr>
+</table>
+
+<h4> First ID:&nbsp;&nbsp;180.0.0.1</h4>
+<table>
+<tr><th>Network</th><th>Network</th><th colspan="8">Host</th><th colspan="9">Host</th></tr>
+<tr><td style="border-style: none;">180.</td><td style="border-style: none;">0.</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td >0</td><td style="border-style:none;">.</td ><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td>1</td></tr>
+</table>
+
+<h4> Last ID:&nbsp;&nbsp;180.0.255.254</h4>
+<table>
+<tr><th>Network</th><th>Network</th><th colspan="8">Host</th><th colspan="9">Host</th></tr>
+<tr><td style="border-style: none;">180.</td><td style="border-style: none;">0.</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td> <td>1</td> <td>1</td><td >1</td><td style="border-style:none;">.</td ><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td> <td>1</td> <td>1</td><td>0</td></tr>
+</table>
+
+<h4> Broadcast ID:&nbsp;&nbsp;180.0.255.255</h4>
+<table>
+<tr><th>Network</th><th>Network</th><th colspan="8">Host</th><th colspan="9">Host</th></tr>
+<tr><td style="border-style: none;">180.</td><td style="border-style: none;">0.</td>
+<td>1</td><td>1</td><td>1</td><td>1</td><td>1</td> <td>1</td> <td>1</td><td >1</td><td style="border-style:none;">.</td >
+<td>1</td><td>1</td><td>1</td><td>1</td><td>1</td> <td>1</td> <td>1</td><td>1</td></tr>
+</table>
+<br>
+<h3> Example IP adress in Class C : 192.0.0.0</h3>
+<h4> Network ID:&nbsp;&nbsp;192.0.0.0</h4>
+<table style="margin-left: 5%">
+<tr><th>Network</th><th colspan="8">Host</th><th colspan="9">Host</th><th colspan="8">Host</th></tr>
+<tr><td style="border-style: none;">192.</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td >0</td><td style="border-style:none;">.</td >
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td >0</td><td style="border-style:none;">.</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td>0</td></tr>
+</table>
+
+<h4> First ID:&nbsp;&nbsp;192.0.0.1</h4>
+<table style="margin-left: 5%">
+<tr><th>Network</th><th colspan="8">Host</th><th colspan="9">Host</th><th colspan="8">Host</th></tr>
+<tr><td style="border-style: none;">192.</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td >0</td><td style="border-style:none;">.</td >
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td >0</td><td style="border-style:none;">.</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td>1</td></tr>
+</table>
+
+<h4> Last ID: &nbsp;&nbsp;  192.0.0.254</h4>
+<table style="margin-left: 5%">
+<tr><th>Network</th><th colspan="8">Host</th><th colspan="9">Host</th><th colspan="8">Host</th></tr>
+<tr><td style="border-style: none;">192.</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td >0</td><td style="border-style:none;">.</td >
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td >0</td><td style="border-style:none;">.</td>
+<td>1</td><td>1</td><td>1</td><td>1</td><td>1</td> <td>1</td> <td>1</td><td>0</td></tr>
+</table>
+
+<h4> Broadcast ID: &nbsp;&nbsp;  192.0.0.255</h4>
+<table style="margin-left: 5%">
+<tr><th>Network</th><th colspan="8">Host</th><th colspan="9">Host</th><th colspan="8">Host</th></tr>
+<tr><td style="border-style: none;">192.</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td >0</td><td style="border-style:none;">.</td >
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td >0</td><td style="border-style:none;">.</td>
+<td>1</td><td>1</td><td>1</td><td>1</td><td>1</td> <td>1</td> <td>1</td><td>1</td></tr>
+</table>
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>   
+
+    <div class="previous_next">   
+          <a href="networking-windows-router.html" class="previous round">&#8249;&#8249;</a>
+          <a href="#" class="next round">&#8250;&#8250;</a>
+    </div> 
+</div>
+
+<div class="col-3 right">
+<div class="aside"> 
+</div>
+</div>
+
+</div>
+<div class="footer">
+  <p>ATOOZ.IN</p>
+</div>
+
+</body>
+</html>

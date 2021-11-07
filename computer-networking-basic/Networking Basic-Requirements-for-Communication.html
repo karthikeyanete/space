@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/index.css">
+<script src="js/script.js"></script>
+</head>
+<body>
+    <title>Number System</title>
+<div class= "header-top">
+<ul>
+<li><a href="../index.html" target="_blank"><img src="home.png"></a></li>
+</ul>
+</div>
+<div class="header">
+  <button class="hide-large" onclick="opened()">&#9776;</button>
+       <h3>Fundamentals of Networking </h3>
+</div>
+
+
+    <div class="row">
+    <div class="col-3 menu animate-left" id="mySidebar">
+    <ul>
+    <li> <a href="Networking-Basic-Number%20System.html">Number System</a></li>
+    <li> <a href="Networking-Basic-NumberSystem-Conversions.html">Number System Conversion</a></li>
+    <li> <a href="Networking-Basic-Communication.html">Communication</a></li>
+    <li> <a style="color:red" href="Networking%20Basic-Requirements-for-Communication.html">Requirements for Communication</a></li>
+    <li> <a href="Networking-Basic-Cables.html">Cables</a></li>
+    <li> <a href="Networking-Basic-IP-Address.html">IP address</a></li>
+    <li> <a href="Networking-Basic-IPV6-Address.html">IPV6 address</a></li>
+    <li> <a href="Networking-Basic-MAC-Address.html">MAC address</a></li>
+    <li> <a href="Networking-Basic-Basic-Commands.html">Basic Commands</a></li>
+    <li> <a href="Networking-Basic-Networking.html">Networking</a></li>
+    <li> <a href="Networking-Basic-SubnetMask.html">Subnet Mask</a></li>
+    <li> <a href="Networking-Basic-Subnetting.html">Subnetting</a></li>
+    <li> <a href="Networking-Basic-Router.html">Router</a></li>
+    <li> <a href="Networking-Basic-Switch.html">Switch</a></li>
+    <li> <a href="Networking-Basic-Windows%20as%20Router.html">Windows as Router</a></li>
+    <li> <a href="Networking-Basic-CISCO-Router.html">Cisco Router</a></li>
+ </ul>
+</div>
+
+<div class="col-6 main">
+    <h3>Requirements for Communication </h3>
+    <p>If two computer is need to be connected it requires a medium, here the medium of communication is through Cable. There are several types of cable, according to the requirements the cable is chosen. The connection of cable between two computer is  not enough for communication.</p>
+    <p>It needs identification that is IP(Internet Protocol) address (Location based identification address or logical address) and MAC (Media access control )address  it is hardware unique address </p>
+
+    <h4>The requirements are </h4>
+    <li> Cable </li>
+    <li> For Identification  MAC address and  IP address  </li>
+    <p>There are several types of cables. and IP address is classified into two types. that can be seen briefly in upcomming chpaters</p>
+    <h3>Network topology</h3>
+    <p> It is the arrangement of the elements of the network. also called as virtual structure of the network. The network topologies are</p>
+    <li>Bus topology</li>
+    <li>Star topology</li>
+    <li>Ring topology</li>
+    <li>Mesh topology</li>
+    
+    <h3>Bus topology</h3>
+    <p>It is a topology for a LAN in which all the nodes are connected to a single cable. the wire used to connect the computer is called as bus. all the computers are connected to bus and its end is connected with the terminator.</p>
+    <h4>Advantages</h4>
+    <li>It is easy to connect and required less cables </li>
+    <li>Low cost,simple,reliable and works well for small networks</li>
+    <li>If one node fails it will not affect other</li>
+    <h4>Disadvantages</h4>
+    <li>Entire network will be failed if any fault in the main cable or T connector</li>
+    <li>Slow with many computers and perfomance is less </li>
+    <a style="padding-left: 6%"> <img src="images/bustopology.png"></a>
+
+
+    <h3>Star topology</h3>
+    <p>It is a topology for a LAN in which all the nodes are connected to a center point like a hub or a switch. It takes more cable than bus</p>
+    <h4>Advantages</h4>
+    <li>If one node or connection breaks it doesnot affect other computers </li>
+    <li>During addition or removal of the network the network will not get disturbed</li>
+    <h4>Disadvantages</h4>
+    <li>Expensive network each host is connected to the hub or router through seperate cables</li>
+    <li>If router or hub fails then the total network will get failed</li>
+    <a style="padding-left: 10%"> <img src="images/startopology.png"></a>
+
+    <h3>Ring topology</h3>
+    <p>It is a topology which each node connected to other node and last computer is connected to the first computer. The computers are connected in the ring form and each computer transmits the data which recieved from previous computer. The data flows in the form of Ring in one direction.</p>
+    <h4>Advantages</h4>
+    <li>Performs better then bus topology. Point to point communication</li>
+    <li>Does not require a central node to manage all the networks</li>
+    <h4>Disadvantages</h4>
+    <li>Adding or removal of the node will affect whole the network</li>
+    <li>Communication delay is occured according to the number of computers</li>
+    <li>If one computer fails then the hole network will get failed</li>
+    <a style="padding-left: 10%"> <img src="images/ringtopology.png"></a>
+
+    <h3>Mesh topology</h3>
+    <p>It is a topology in which each node connected to each other node.The data is send directly from one device to another device</p>
+    <h4>Disadvantages</h4>
+    <li>Difficult to configure and maintain</li>
+    <li>More cables are used it is expensive</li>
+    <a style="padding-left: 10%"> <img src="images/meshtopology.png"></a>
+    
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>   
+
+    <div class="previous_next">   
+          <a href="networking-windows-router.html" class="previous round">&#8249;&#8249;</a>
+          <a href="#" class="next round">&#8250;&#8250;</a>
+    </div> 
+
+</div>
+
+<div class="col-3 right">
+<div class="aside"> 
+</div>
+</div>
+
+</div>
+<div class="footer">
+  <p>ATOOZ.IN</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/index.css">
+<script src="js/script.js"></script>
+<style>
+table{
+width:60%;
+}
+table, td {
+border-collapse: collapse;
+}
+table td{
+border: 0.1px solid #013220;
+}
+th, td {
+padding: 8px;
+text-align: center;
+}
+.internal{
+width:30%;
+margin-left:30%;
+}
+
+.internal1{
+width:30%;
+margin-left:30%;
+padding: 20px;
+}
+</style>
+</head>
+<body>
+    <title>Number System</title>
+    <div class= "header-top">
+<ul>
+<li><a href="../index.html" target="_blank"><img src="home.png"></a></li>
+</ul>
+</div>
+<div class="header">
+  <button class="hide-large" onclick="opened()">&#9776;</button>
+       <h3>Fundamentals of Networking </h3>
+</div>
+    <div class="row">
+    <div class="col-3 menu animate-left" id="mySidebar">
+    <ul>
+    <li> <a href="Networking-Basic-Number%20System.html">Number System</a></li>
+    <li> <a href="Networking-Basic-NumberSystem-Conversions.html">Number System Conversion</a></li>
+    <li> <a href="Networking-Basic-Communication.html">Communication</a></li>
+    <li> <a href="Networking%20Basic-Requirements-for-Communication.html">Requirements for Communication</a></li>
+    <li> <a href="Networking-Basic-Cables.html">Cables</a></li>
+    <li> <a href="Networking-Basic-IP-Address.html">IP address</a></li>
+    <li> <a href="Networking-Basic-IPV6-Address.html">IPV6 address</a></li>
+    <li> <a href="Networking-Basic-MAC-Address.html">MAC address</a></li>
+    <li> <a href="Networking-Basic-Basic-Commands.html">Basic Commands</a></li>
+    <li> <a href="Networking-Basic-Networking.html">Networking</a></li>
+    <li> <a href="Networking-Basic-SubnetMask.html">Subnet Mask</a></li>
+    <li> <a style="color:red" href="Networking-Basic-Subnetting.html">Subnetting</a></li>
+    <li> <a href="Networking-Basic-Router.html">Router</a></li>
+    <li> <a href="Networking-Basic-Switch.html">Switch</a></li>
+    <li> <a href="Networking-Basic-Windows%20as%20Router.html">Windows as Router</a></li>
+    <li> <a href="Networking-Basic-CISCO-Router.html">Cisco Router</a></li>
+ </ul>
+</div>
+ 
+<div class="col-6 main">
+ <h3>Subnetting</h3>
+<p>Before going into the subnet Masking Understood the Network and host bits according to the Class</p>
+<table>
+<tr><th>Class</th><th>SubnetMask</th><th>Network and Host</th></tr>
+<tr><td>Class A </td><td> 255.0.0.0</td> <td>N.H.H.H</td></tr>
+<tr><td>Class B </td><td> 255.255.0.0</td> <td>N.N.H.H</td></tr>
+<tr><td>Class C </td><td> 255.255.255.0</td> <td>N.N.N.H</td></tr>
+</table>
+
+<h3>What is Subnetting ?</h3>
+<p>Dividing the Major Network into multiple Small network according to the requirements. Originally all IP address is <b>classfull.</b> If IP address having more than the default network bits is called <b>classless.</b>  Classfull IP address is transfered into Classless this method is Called <b>subnetting</b> </p>
+<h4>Classfull &rarr; Subnetting &rarr; Classless</h4>
+
+<h3>What is the benefit of subnetting ?</h3>
+<p>Avoiding the wastage of IP addresss and it is utilized based on the requirements</p>
+<br>
+<h3>Why Subnetting with Scenario?</h3>
+<p>If an Organisation Contains 1000 Computers with several departments </p>
+<br>
+<table class="internal">
+<tr><td>Development section <br>500 Computers <br>10.0.0.0/8</td></tr>
+<tr><td>HR Department <br>300 Computers <br>20.0.0.0/8 </td></tr>
+<tr><td>Sales Department <br>200 Computers <br>30.0.0.0/8 </td></tr>
+</table>
+<br>
+<p>Class A contains 2^24 that is => 16777214 IP Address</p>
+<br>
+<h3>Subnetting</h3>
+<table class="internal1">
+<tr><td colspan="3">Subnetting</td></tr>
+<tr><td>Development</td><td>HR</td><td>Sales</td></tr>
+<tr><td colspan="3">Major Network</td></tr>
+</table>
+<p> If We assigned diffrent network to a system In Each network the IP adress is wasted inorder to avoid the wastage the subnetting is done</p>
+
+<h3>How to do Subnetting ?</h3>
+<p>Example : In an Organisation there is six department for that the Subnetting is to be done in the Given IP adress</p>
+<h4>Step 1:</h4>
+<p> Borrow New network bits From the Host portion according to the requirement</p>
+<li> Example IP : Class C => 192.1.1.0</li>
+
+<table>
+<tr><th>Network</th><th>Network</th><th>Network</th><th colspan="8">Host</th></tr>
+<tr><td style="border-style: none;">192.</td><td style="border-style: none;">0.</td><td style="border-style: none;">0.</td>
+<td>0</td><td>0</td><td>0</td><td>0</td><td>0</td> <td>0</td> <td>0</td><td>0</td></tr>
+<br>
+<tr><td colspan="3" style="border-style: none"><pre>--24 Default Network Bits--</pre></td><td colspan="8" style="border-style:none"><pre><--->  8 Host Bits  <---></pre></td></tr>
+    <tr><td colspan="6" style="border-style: none"><pre>---24 Network Bits + 3 New Network Bits---</pre></td><td colspan="5" style="border-style:none"><pre>--- 5 Host Bits ---</pre></td></tr></td></tr>
+</table>
+
+<li>If one bit borrowed from 25th bit => 2^1 => 2 Combinations</li>
+<li>If two bit borrowed from 25 th and 26th => 2^2 => 4 Combinations</li>
+<li>If three bit borrowed from 25th,26th and 27th => 2^3 => 8 Combinations</li>
+<p>Our Requirement is 6 subnets so 3 bits borrowed</p>
+<h4>Formulae</h4>
+<li>2^n  n=> Number of Subnets</li>
+<li>Requirement => 6 </li>
+<li>2^1 = 2</li>
+<li>2^2 = 4</li>
+<li>2^3 = 8</li>
+<li>Now 3 Bits are New Network Bits. and now it is called as Classless</li>
+
+<h4>Step : 2</h4>
+<h4>Finding New SubnetMask</h4>
+<li>Default SubnetMask =>24 =>255.255.255.0</li>
+<li>New SubnetMask     =>27  =>255.255.255.224</li>
+<h4>Step : 3</h4>
+<h4>Finding New Subnet IDs</h4>
+<table><tr><td style="border-style: none;">192.</td><td style="border-style: none;">0.</td><td style="border-style: none;">0.</td>
+    <td>0</td><td>0</td><td>0 </td><td>0</td><td>0</td> <td>0</td> <td>0</td><td>0</td> <td style="padding:auto">192.1.1.0 /27</td></tr></table>
+<button onclick="topFunction()" id="myBtn" title="Go to top">&#8593;</button>   
+
+    <div class="previous_next">   
+          <a href="networking-windows-router.html" class="previous round">&#8249;&#8249;</a>
+          <a href="#" class="next round">&#8250;&#8250;</a>
+    </div> 
+</div>
+
+<div class="col-3 right">
+<div class="aside"> 
+</div>
+</div>
+
+</div>
+<div class="footer">
+  <p>ATOOZ.IN</p>
+</div>
+
+</body>
+</html>
+
+
+
